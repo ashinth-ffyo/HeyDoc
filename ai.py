@@ -5,9 +5,9 @@ import pandas as pd
 class DiseasePredictor:
     def __init__(self):
         try:
-            self.model = joblib.load('disease_predictor.joblib')
-            self.feature_encoders = joblib.load('feature_encoders.joblib')
-            self.label_encoder_y = joblib.load('label_encoder_y.joblib')
+            self.model = joblib.load('aimodels/disease_predictor.joblib')
+            self.feature_encoders = joblib.load('aimodels/feature_encoders.joblib')
+            self.label_encoder_y = joblib.load('aimodels/label_encoder_y.joblib')
             print("All files loaded successfully!")
         except FileNotFoundError as e:
             print(f"Error: {e}. Please check the file paths.")
