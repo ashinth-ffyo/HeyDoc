@@ -6,13 +6,13 @@ import joblib
 # Direct download link (replace FILE_ID)
 
 gdrive_url1 = "https://drive.google.com/uc?id=1bNEKUTLz7DQZkigPzJKpJLhJreLlTx7-"  
-model_path1 = "feature_encoders.joblib"
+model_path1 = "aimodels/feature_encoders.joblib"
 
 gdrive_url2 = "https://drive.google.com/uc?id=1ZO-WYJxD8AySv3Qxc80szBMn7KlsTvR8"  
-model_path2 = "label_encoder_y.joblib"
+model_path2 = "aimodels/label_encoder_y.joblib"
 
 gdrive_url = "https://drive.google.com/uc?id=1E0-9bbKUwcdyWL4cxwGYkIkUfUtBeut8"  
-model_path = "disease_predictor.joblib"
+model_path = "aimodels/disease_predictor.joblib"
 
 # Download (only if not already present)
 gdown.download(gdrive_url, model_path, quiet=False)
